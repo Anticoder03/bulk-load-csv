@@ -7,6 +7,60 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Example Laravel App
+
+This is an example Laravel application.
+
+## Installation
+
+1. Clone the repository.
+2. Install PHP dependencies using Composer:
+
+   ```bash
+   composer install
+   ```
+
+3. Install JavaScript dependencies using npm:
+
+   ```bash
+   npm install
+   ```
+
+4. Copy the environment file and generate an application key:
+
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+5. Configure your database in the `.env` file.
+
+6. Run database migrations:
+
+   ```bash
+   php artisan migrate
+   ```
+
+## Usage
+
+- To run the development server with hot module replacement:
+
+   ```bash
+   npm run dev
+   ```
+
+- To build assets for production:
+
+   ```bash
+   npm run build
+   ```
+
+- To serve the Laravel application (if not using a web server like Apache or Nginx):
+
+   ```bash
+   php artisan serve
+   ```
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
